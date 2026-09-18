@@ -42,6 +42,6 @@ while True:
     except ValueError:
         failure_count += 1
         print("[Error] User input is not a positive integer.")
-        break
+        continue
     
     inventory_count = process_delivery(inventory_count, user_input)
